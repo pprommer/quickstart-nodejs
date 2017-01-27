@@ -19,3 +19,12 @@ describe('Another Unit Test', () => {
         expect(result).to.equal('Hello Node');
     });
 });
+
+describe('Failing Unit Test', () => {
+    it('works', () => {
+        const main = require('../');
+        const result = main();
+
+        expect(result).to.equal('Hello');
+    });
+});
